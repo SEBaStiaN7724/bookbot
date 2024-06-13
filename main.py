@@ -27,10 +27,8 @@ def ct_let(tekst):
                 ltsc[t] =1
     return ltsc
 def check(letter_dict):
-    # Convert dict to list of dictionaries
     letter_list = [{'letter': k, 'count': v} for k, v in letter_dict.items()]
 
-    # Sort the list by 'count' in descending order
     letter_list.sort(reverse=True, key=lambda x: x['count'])
 
     return letter_list
