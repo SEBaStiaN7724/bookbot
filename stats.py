@@ -4,7 +4,7 @@ def sort_on(item):
     return item[1]
 
 def get_num_words(file_path):
-    with open(f"{file_path}") as file:
+    with open(file_path, encoding="utf-8") as file:
         content = file.read()
         words_count = len(content.split())
         dictionary = {}
